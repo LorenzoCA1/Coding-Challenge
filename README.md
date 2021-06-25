@@ -19,7 +19,7 @@ pip install lxml
 git clone https://github.com/LorenzoCA1/Coding-Challenge.git
 ```
 
-2. database(for fresh database (OPTIONAL))
+2. database((OPTIONAL)To create a new database)
 ```sh
 Python
 >>>From app import db 
@@ -27,7 +27,7 @@ Python
 >>exit()
 ```
 
-2. database check(for fresh database (OPTIONAL))
+2. database check((OPTIONAL))
 ```sh
 sqlite3 data.db
 >>>.table   (check if cases is a table)
