@@ -1,8 +1,6 @@
 from flask import Flask, render_template, request
 from flask_sqlalchemy import SQLAlchemy
-
 from lxml import etree
-
 from DataSearch import SearchPlaintiffs, SearchDefendants
 
 app = Flask(__name__)
