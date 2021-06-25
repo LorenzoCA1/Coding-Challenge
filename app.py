@@ -37,9 +37,16 @@ def upload():
 	db.session.add(store)
 	db.session.commit()
 
+	user_data = Cases.query.all()
 
-	return "Saved " + file.filename + " to the database"
+	return render_template("data.html", user_data = user_data)
+	
 
-#@app.route("/data")
+@app.route("/data")
+def data():
+	user_data = Cases.query.all()
+
+	return render_template("data.html", user_data = user_data)
+
 if __name__ == '__main__':
   app.run(debug=True)
